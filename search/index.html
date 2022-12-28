@@ -48,6 +48,12 @@
                 var file = document.getElementById('engine').value+".txt";
                 getpayload(file);   
             }
+            function open_urls(){
+                var x = document.getElementsByClassName('form-check-input');
+                for(var i = 0;i<x.length;i++){
+                    window.open((x[i].value);
+                }
+            }
         </script>
     </head>
     <body>
@@ -60,6 +66,7 @@
                         <option>github</option>
                         <option>google</option>
                     </select>
+                    <button type="button" class="btn btn-success form-control-sm" onclick="open_urls()">Open Multiple URLs</button>
                 </div>
             </div>
         </form>
