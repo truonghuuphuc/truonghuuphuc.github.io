@@ -20,7 +20,8 @@
             function show(){
                 var file = document.getElementById('engine').value+".txt";
                 var site = document.getElementById('site').value;
-                var payload = getpayload(file).split("\n");
+                var payload = String(getpayload(file));
+                payload = payload.split("\n");
                 var engine = '';
                 
                 for(var i=0;i<payload.length;i++){
