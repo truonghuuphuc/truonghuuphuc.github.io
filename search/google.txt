@@ -32,7 +32,6 @@ ext:xml+|+ext:conf+|+ext:cnf+|+ext:reg+|+ext:inf+|+ext:rdp+|+ext:cfg+|+ext:txt+|
 ext:sql+|+ext:dbf+|+ext:mdb
 ext:log
 ext:bkf+|+ext:bkp+|+ext:bak+|+ext:old+|+ext:backup
-ext:sql+|+ext:dbf+|+ext:mdb
 ext:doc+|+ext:docx+|+ext:odt+|+ext:pdf+|+ext:rtf+|+ext:sxw+|+ext:psw+|+ext:ppt+|+ext:pptx+|+ext:pps+|+ext:csv
 ext:php+intitle:phpinfo+"published+by+the+PHP+Group"
 ext:action+|+ext:struts+|+ext:do
