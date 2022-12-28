@@ -24,7 +24,7 @@
                             engine = `https://www.google.com/search?q=site:${site}+${payload[i]}`;
                         }
                         var id = `${i}`; 
-                        var url = `<div class="form-check"><input type="checkbox" class="form-check-input" id="${id}" value="${engine}"><label class="form-check-label" for="${id}" onclick="window.open(document.getElementById('${id}').value)">${engine}</label><div class="form-check">`;                        
+                        var url = `<div class="form-check"><input type="checkbox" class="form-check-input" id="${id}" value='${engine}'><label class="form-check-label" for="${id}" onclick="window.open(document.getElementById('${id}').value)">${engine}</label><div class="form-check">`;                        
                         urls.push([url]);
                     }
                     $(document).ready(function (){
