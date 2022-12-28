@@ -1,1 +1,58 @@
+<html>
+    <head>
+        <title>search</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+        <script>
+            function getpayload(file){
+                var xhttp = new XMLHttpRequest();
+                xhttp.onload = function (){
+                    return this.responseText;
+                }
+                
+                xhttp.open('GET','/search/'+file);
+                xhttp.send();
+            }
+            
+            function show(){
+                var file = document.getElementById('engine').value+".txt";
+                var site = document.getElementById('site').value;
+                var payload = getpayload(file).split("\n");
+                var engine = '';
+                
+                for(var i=0;i<payload.length;i++){
+                    if (document.getElementById('engine').value == 'github'){
+                        engine = `https://github.com/search?o=desc&q=${site}+${payload[i]}&s=indexed&type=Code`;
+                    }
+                    else
+                    {
+                        engine = `https://www.google.com/search?q=site:${site}+${payload[i]}`;
+                    }
+                    var id = `${i}`; 
+                    var url = `<input type="checkbox" id="${id}" value="${engine}"><label for="${id}" onclick="window.open(document.getElementById('${id}').value)">${engine}</label>`;
+                    document.getElementById('render').innerHTML+=url;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <div class="form-group row">
+                <div class="col-sm-10">
+                    <input type="text" class="form-control-sm" placeholder="Search" id="site">
+                    <select class="form-control-sm" id="engine" onchange="show()">
+                        <option>Engine</option>
+                        <option>github</option>
+                        <option>google</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+        <div id="render">
 
+        </div>
+    </body>
+</html>
