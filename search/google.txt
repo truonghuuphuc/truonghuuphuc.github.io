@@ -1,5 +1,6 @@
 intitle:index.of
 inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
+ext:html+|+ext:php+|+ext:asp+|+ext:aspx+|+ext:jsp+|+ext:cfm+|+ext:xml
 ext:xml+|+ext:conf+|+ext:cnf+|+ext:reg+|+ext:inf+|+ext:rdp+|+ext:cfg+|+ext:txt+|+ext:ora+|+ext:ini+|+ext:env
 ext:sql+|+ext:dbf+|+ext:mdb
 ext:log
@@ -10,6 +11,7 @@ ext:php+intitle:phpinfo+"published+by+the+PHP+Group"
 ext:action+|+ext:struts+|+ext:do
 ext:pdf+"confidential"
 inurl:login
+inurl:"@gmail.com"+|+ inurl:"@yahoo.com"+|+inurl:"@hotmail.com"+|+inurl:"@msn.com"
 inurl:signup+|+inurl:register+|+intitle:Signup
 inurl:wp-+|+inurl:wp-content+|+inurl:plugins+|+inurl:uploads+|+inurl:themes+|+inurl:download
 inurl:shell+|+inurl:backdoor+|+inurl:wso+|+inurl:cmd+|+shadow+|+passwd+|+boot.ini+|+inurl:backdoor
