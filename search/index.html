@@ -10,7 +10,7 @@
             function getpayload(file){
                 var xhttp = new XMLHttpRequest();
                 xhttp.onload = function (){
-                    return this.responseText;
+                    return this.responseText.split("\n");
                 }
                 
                 xhttp.open('GET','/search/'+file);
@@ -20,9 +20,7 @@
             function show(){
                 var file = document.getElementById('engine').value+".txt";
                 var site = document.getElementById('site').value;
-                var payload = String(getpayload(file));
-                alert(payload);
-                payload = payload.split("\n");
+                var payload = getpayload(file);
                 var engine = '';
                 
                 for(var i=0;i<payload.length;i++){
