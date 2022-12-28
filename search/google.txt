@@ -1,5 +1,32 @@
 intitle:index.of
-inurl:login | inurl:signin | intitle:Login | intitle:"sign in" | inurl:auth
+intitle:"Index+of+/admin"
+intitle:"Index+of+/backup"
+intitle:"Index+of+/mail"
+intitle:"Index+of+/password"
+intitle:"Index+of+/wp-content/uploads/backupbuddy_backups"+zip
+intitle:"Index+of"+"database.sql"
+intitle:"Index+of"+"logins.json"+"key3.db"
+intitle:"Index+of"+/+"chat/logs"
+intitle:"Index+of+/"+.htaccess
+intitle:"Index+of+/"+passwd
+intitle:"Index+of+/"+password.txt
+intitle:"Index+Of+/network"+"last+modified"
+intitle:"index+of+/"+(+upload.cfm+|+upload.asp+|+upload.php+|+upload.cgi+|+upload.jsp+|+upload.pl+)
+intitle:"index+of+/private"+-site:net+-site:com+-site:org
+intitle:"index+of+/private"+site:mil
+intitle:"index+of+/ups.com/WebTracking"
+intitle:"index+of+cgi-bin"
+intitle:"index+of"+"database.sql.zip"
+intitle:"index+of"+"database_log"
+intitle:"index+of"+/+lck
+intitle:"index+of"+/+picasa.ini
+intitle:"index+of"+/wp-content/uploads/shell.php
+intitle:"index+of"+bigdump.php
+intitle:"index+of"+intext:fckeditor+inurl:fckeditor
+intitle:"index+of"+inurl:recycler
+intitle:"index+of"+inurl:root+intitle:symlink
+intitle:"index+of"+inurl:sym
+intitle:"index+of/"+"ws_ftp.ini"+"parent+directory"
 ext:html+|+ext:php+|+ext:asp+|+ext:aspx+|+ext:jsp+|+ext:cfm+|+ext:xml
 ext:xml+|+ext:conf+|+ext:cnf+|+ext:reg+|+ext:inf+|+ext:rdp+|+ext:cfg+|+ext:txt+|+ext:ora+|+ext:ini+|+ext:env
 ext:sql+|+ext:dbf+|+ext:mdb
@@ -12,6 +39,7 @@ ext:action+|+ext:struts+|+ext:do
 ext:pdf+"confidential"
 inurl:login
 inurl:"@gmail.com"+|+ inurl:"@yahoo.com"+|+inurl:"@hotmail.com"+|+inurl:"@msn.com"
+inurl:login+|+inurl:signin+|+intitle:Login+|+intitle:"sign+in"+|+inurl:auth
 inurl:signup+|+inurl:register+|+intitle:Signup
 inurl:wp-+|+inurl:wp-content+|+inurl:plugins+|+inurl:uploads+|+inurl:themes+|+inurl:download
 inurl:shell+|+inurl:backdoor+|+inurl:wso+|+inurl:cmd+|+shadow+|+passwd+|+boot.ini+|+inurl:backdoor
@@ -21,3 +49,4 @@ inurl:"/phpinfo.php"+|+inurl:".htaccess"+|+inurl:"/.git"
 inurl:wp-content+|+inurl:wp-includes
 intext:"sql+syntax+near"+|+intext:"syntax+error+has+occurred"+|+intext:"incorrect+syntax+near"+|+intext:"unexpected+end+of+SQL+command"+|+intext:"Warning:+mysql_connect()"+|+intext:"Warning:+mysql_query()"+|+intext:"Warning:+pg_connect()"
 "PHP+Parse+error"+|+"PHP+Warning"+|+"PHP+Error"
+
