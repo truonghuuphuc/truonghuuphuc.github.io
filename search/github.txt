@@ -58,3 +58,4 @@ jdbc:mysql://
 jdbc:sqlserver://
 mysql:host 
 privateKey
+password
