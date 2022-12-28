@@ -6,7 +6,7 @@ ext:bkf+|+ext:bkp+|+ext:bak+|+ext:old+|+ext:backup
 ext:doc+|+ext:docx+|+ext:odt+|+ext:pdf+|+ext:rtf+|+ext:sxw+|+ext:psw+|+ext:ppt+|+ext:pptx+|+ext:pps+|+ext:csv
 ext:php+intitle:phpinfo+"published+by+the+PHP+Group"
 ext:action+|+ext:struts+|+ext:do
-ext:pdf+\"confidential\"
+ext:pdf+"confidential"
 inurl:login
 inurl:wp-+|+inurl:wp-content+|+inurl:plugins+|+inurl:uploads+|+inurl:themes+|+inurl:download
 inurl:shell+|+inurl:backdoor+|+inurl:wso+|+inurl:cmd+|+shadow+|+passwd+|+boot.ini+|+inurl:backdoor
