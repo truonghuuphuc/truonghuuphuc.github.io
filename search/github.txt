@@ -56,6 +56,7 @@ jdbc.databaseurl
 jdbc:postgresql://
 jdbc:mysql://
 jdbc:sqlserver://
+mongodb://
 mysql:host 
 privateKey
 password
