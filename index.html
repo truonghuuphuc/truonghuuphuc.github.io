@@ -1,18 +1,1 @@
-        <script>
-            function getpayload(){
-                var xhttp = new XMLHttpRequest();
-                xhttp.onload = function ()
-                {
-                    var urls = []
-                    var site = document.getElementById('site').value;
-                    var payload = this.responseText.split("\n");
-                    console.log(payload);
-                }
-                
-                xhttp.open('GET','https://github.com/search?o=desc&q=nokia.com&s=indexed&type=codelegacy');
-                xhttp.send();
-            }
-            getpayload()
-           
-            
-        </script>
+
