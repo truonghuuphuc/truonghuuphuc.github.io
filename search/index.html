@@ -12,11 +12,12 @@
                 xhttp.onload = function ()
                 {
                     var urls = []
-                    var site = document.getElementById('site').value==null ? (new URLSearchParams(document.location.search).get('t')) :  document.getElementById('site').value; 
+                    var site = document.getElementById('site').value=='' ? new URLSearchParams(document.location.search).get('t') :  document.getElementById('site').value; 
+                    var e = document.getElementById('engine').value =='' ? new URLSearchParams(document.location.search).get('e') :  document.getElementById('engine').value;
                     var payload = this.responseText.split("\n");
                     var engine = '';
                     for(var i=0;i<payload.length;i++){
-                        if (document.getElementById('engine').value == 'github'){
+                        if ( e=='github'){
                             engine = `https://github.com/search?o=desc&q=${site}+${payload[i]}&s=indexed&type=Code`;
                         }
                         else
