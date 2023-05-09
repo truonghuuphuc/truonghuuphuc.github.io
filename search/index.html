@@ -54,7 +54,11 @@
                 var params = new URLSearchParams(document.location.search);
                 if (params.get('e')!=null && params.get('t')!=null){
                     getpayload(params.get('e')+'.txt');
-                    var x = document.getElementsByClassName('form-check-input');for(var i = 0;i<x.length;i++){setTimeout(function timer(s) {window.open(s);}, i * 3000,x[i].value);}
+                    var x = document.getElementsByClassName('form-check-input');
+                    for(var i = 0;i<x.length;i++){
+                        setTimeout(function timer(s) {window.open(s);}, i * 3000,x[i].value);
+                        console.log(x[i].value);
+                    }
                 
                 }
             
